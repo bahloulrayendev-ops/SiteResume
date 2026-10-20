@@ -1,20 +1,45 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Briefcase,Server, Code, Users } from 'lucide-react';
+import { Briefcase,Server, Code, Users,Database } from 'lucide-react';
 
 const ExperienceSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const experiences = [
+        {
+      title: "Backend Developer Intern",
+      subtitle: "DataInfo",
+      period: "Septembre 2026",
+      place:"Cairo, Egypt",
+      icon: Database,
+      description: [
+        "Developed the complete backend of a token-based business contact data platform",
+        "Built REST APIs secured with JWT authentication, with dynamic multi-filter search, pagination and company and people detail endpoints",
+        "Designed the PostgreSQL database and JPA entity model, and implemented the token-system, pay-per-contact unlocks tracking"
+      ]
+    },
+            {
+      title: "Global Volunteer",
+      subtitle: "AIESEC",
+      period: "Septembre 2026–Octobre 2026",
+      place:"Cairo, Egypt",
+      icon: Database,
+      description: [
+        "Developed global leadership, cross-cultural communication, and adaptability while working in a multicultural environment",
+        "Collaborated with an international team to deliver community-focused training and skill-development workshops under the Skill Up project",
+        "Facilitated cross-cultural exchange, practical problem-solving, and team coordination to achieve project goals within fixed timelines"
+      ]
+    },
     {
       title: "Web Development Intern",
       subtitle: "WhiteCape",
-      period: "2025",
+      period: "July 2026",
+      place:"Sousse, Tunisia",
       icon: Server,
       description: [
         "Developed the complete backend of a ceremony and conference hall management system",
-        "Designed and implemented backend functionality for hall management, reservations, employees, work schedules, tasks and financial tracking",
+        "Designed and implemented backend functionality for hall management, reservations, employees, schedules, tasks and financial tracking",
         "Collaborated with a frontend developer to integrate and test the system using Git, GitHub and Postman"
       ]
     },
@@ -22,6 +47,7 @@ const ExperienceSection = () => {
       title: "Member",
       subtitle: "Google Developer Groups on Campus",
       period: "2024 - Present",
+      place:"Sousse, Tunisia",
       icon: Code,
       description: [
         "Participating in a team-based hackathon",
@@ -32,6 +58,7 @@ const ExperienceSection = () => {
       title: "Team Leader",
       subtitle: "Lyna Ceremony Hall",
       period: "2023 - Present",
+      place:"M'saken, Tunisia",
       icon: Users,
       description: [
         "Worked in a high-pressure event environment",
@@ -85,6 +112,7 @@ const ExperienceSection = () => {
                           </h3>
                           <p className="text-teal-400 font-medium">{exp.subtitle}</p>
                           <p className="text-gray-400 text-sm mt-1">{exp.period}</p>
+                          <p className="text-gray-400 text-sm mt-1">{exp.place}</p>
                         </div>
                       </div>
 

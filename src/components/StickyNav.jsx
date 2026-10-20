@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Phone, Mail } from 'lucide-react';
+import { Phone, Mail, Download } from 'lucide-react';
 
 const StickyNav = ({ show }) => {
   return (
@@ -20,7 +20,17 @@ const StickyNav = ({ show }) => {
                 <p className="text-sm text-teal-400">Computer Systems Engineering</p>
               </div>
               
-              <div className="hidden sm:flex items-center gap-4">
+              <div className="flex items-center gap-3 sm:gap-4">
+                <a
+                  href="/ATS-Friendly%20Resume.pdf"
+                  download="Bahloul-Mohamed-Rayen-ATS-Resume.pdf"
+                  className="flex items-center gap-2 px-3 py-2 bg-teal-500 hover:bg-teal-400 text-slate-950 text-sm font-semibold rounded-lg transition-colors"
+                  aria-label="Download ATS resume as PDF"
+                >
+                  <Download className="w-4 h-4" />
+                  <span>Resume PDF</span>
+                </a>
+                <div className="hidden sm:flex items-center gap-4">
                 <a 
                   href="tel:+21628354645"
                   className="flex items-center gap-2 text-sm text-gray-300 hover:text-teal-400 transition-colors"
@@ -35,6 +45,7 @@ const StickyNav = ({ show }) => {
                   <Mail className="w-4 h-4" />
                   <span>Bahloul.Rayen.Dev@gmail.com</span>
                 </a>
+                </div>
               </div>
             </div>
           </div>

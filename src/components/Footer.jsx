@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, Linkedin, Instagram, Facebook } from 'lucide-react';
+import { Phone, Mail, Linkedin, Github, Instagram, Facebook, Download } from 'lucide-react';
 import { useToast } from './ui/use-toast';
 
 const Footer = () => {
@@ -62,6 +62,8 @@ const Footer = () => {
               >
                 <Linkedin className="w-5 h-5 text-teal-400" />
               </a>
+
+
               {/* Instagram link */}
               <a
                 href="https://www.instagram.com/rayen__bhl/"
@@ -72,6 +74,20 @@ const Footer = () => {
               >
                 <Instagram className="w-5 h-5 text-teal-400" />
               </a>
+
+
+              {/* Github link */}
+              <a
+                href="https://github.com/bahloulrayendev-ops"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-slate-800 hover:bg-teal-500/20 border border-teal-500/30 hover:border-teal-500 rounded-lg transition-all duration-300 transform hover:scale-110"
+                aria-label="Github"
+              >
+                <Github className="w-5 h-5 text-teal-400" />
+              </a>
+
+
               {/* Facebook link */}
               <a
                 href="https://www.facebook.com/rayen.bhl.5/"
@@ -99,6 +115,15 @@ const Footer = () => {
               programming, and continuous learning. Always eager to take on new 
               challenges and contribute to meaningful projects.
             </p>
+            <a
+              href="/ATS-Friendly%20Resume.pdf"
+              download="Bahloul-Mohamed-Rayen-ATS-Resume.pdf"
+              className="inline-flex items-center gap-2 mt-5 px-4 py-2.5 bg-teal-500 hover:bg-teal-400 text-slate-950 text-sm font-semibold rounded-lg transition-colors"
+              aria-label="Download ATS resume as PDF"
+            >
+              <Download className="w-4 h-4" />
+              <span>Download ATS Resume</span>
+            </a>
           </motion.div>
         </div>
 

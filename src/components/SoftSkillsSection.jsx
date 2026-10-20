@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Lightbulb, Users, MessageSquare, Zap, Clock, Target } from 'lucide-react';
+import { Lightbulb, Users, MessageSquare, Zap, Clock, Target,Activity,ClipboardList,ShieldCheck } from 'lucide-react';
 
 const SoftSkillsSection = () => {
   const ref = useRef(null);
@@ -11,7 +11,10 @@ const SoftSkillsSection = () => {
     { name: "Communication Skills", icon: MessageSquare },
     { name: "Adaptability & Quick Learning", icon: Zap },
     { name: "Time Management", icon: Clock },
-    { name: "Problem-Solving Mindset", icon: Target }
+    { name: "Problem-Solving Mindset", icon: Target },
+    { name: "Autonomy & Self-Learning", icon: ClipboardList },
+    { name: "Ownership & Responsibility", icon: ShieldCheck },
+    { name: "Business Requirement Analysis", icon: Activity },
   ];
 
   return (

@@ -1,22 +1,24 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { FolderGit2, Brain, Building2 } from 'lucide-react';
+import { FolderGit2, Brain, Building2,Database } from 'lucide-react';
 
 const ProjectSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const projects = [
-{
-  title: "Clever",
-  subtitle: "Student Productivity & Development Platform",
-  icon: Brain,
+
+    {
+  title: "Datasphere",
+  subtitle: "Token-Based Business Contact Data Platform",
+  icon: Database,
   description: [
-    "Developed an all-in-one platform providing students with tools for academic planning, organization and personal development",
-    "Implemented features including calendar management, AI-powered chats, goal roadmaps and academic average calculators",
-    "Created an opportunities feed featuring conferences, hackathons and activities to help students develop their skills and improve their resumes"
+    "Built the back end of a data platform where users search companies and employees and unlock contact details using a token wallet",
+    "Designed a Spring Boot REST API with JWT authentication, PostgreSQL and JPA, featuring dynamic multi-filter search with pagination for companies and people, plus company detail pages",
+    "Implemented a pay-per-contact unlock system that keeps contact values hidden until purchase, tracks each client's unlocked contacts, and manages token balances, purchases and transaction history"
   ]
 },
+
 {
   title: "Ceremony & Conference Hall Management System",
   subtitle: "Management & Reservation Web Platform",
@@ -25,6 +27,18 @@ const ProjectSection = () => {
     "Developed a web-based platform for managing ceremony and conference halls, reservations and daily operations",
     "Implemented features for employee management, work schedules, task organization, and financial tracking",
     "Centralized hall management and administrative operations through an organized and user-friendly interface"
+  ]
+},
+
+
+{
+  title: "Clever",
+  subtitle: "Student Productivity & Development Platform",
+  icon: Brain,
+  description: [
+    "Developed an all-in-one platform providing students with tools for academic planning, organization and personal development",
+    "Implemented features including calendar management, AI-powered chats, goal roadmaps and academic average calculators",
+    "Created an opportunities feed featuring conferences, hackathons and activities to help students develop their skills and improve their resumes"
   ]
 }
   ];

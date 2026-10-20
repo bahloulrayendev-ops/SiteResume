@@ -10,22 +10,22 @@ const TechnicalSkillsSection = () => {
     {
       title: "Programming Languages",
       icon: Code2,
-      skills: ["Python", "C", "SQL", "Assembly"]
+      skills: ["Python", "C", "SQL", "Assembly","Java"]
     },
     {
       title: "Web Technologies",
       icon: Globe,
-      skills: ["HTML5", "CSS", "JavaScript", "PHP"]
+      skills: ["HTML5", "CSS", "JavaScript", "PHP","React", "Tailwind CSS"]
     },
     {
       title: "Databases",
       icon: Database,
-      skills: ["MySQL", "MongoDB", "Firebase"]
+      skills: ["MySQL", "MongoDB","PostgreSQL","XAMPP","SQLDeveloper"]
     },
     {
       title: "Concepts & Paradigms",
       icon: Cpu,
-      skills: ["OOP", "Data Structures", "Object-Oriented Programming"]
+      skills: ["Data Structures", "Object-Oriented Programming"]
     },
     {
       title: "Computer Systems",
@@ -35,7 +35,7 @@ const TechnicalSkillsSection = () => {
     {
       title: "Tools",
       icon: Wrench,
-      skills: ["Microsoft Office", "Google Workspace"]
+      skills: ["Microsoft Office", "Google Workspace","Git", "GitHub", "Postman"]
     }
   ];
 
